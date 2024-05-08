@@ -186,9 +186,7 @@ now css about nav2 */
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 20%;
-    left: 4%;
-
+    margin-top:300px;
 }
 .hero-info p a{
     color: #007185;
