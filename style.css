@@ -1,0 +1,309 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    width: 100%;
+    display: flex;
+    /*to make all the items in center of y-axis align-items center helps to make them center*/
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("amazon_logo.png");
+    width: 100px;
+    height: 50px;
+    background-size: cover;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border :hover{
+    scale: 1.04;
+    cursor: pointer;
+}
+
+/* second address box*/
+.nav-address{
+    align-items: center;
+    /* margin-top: 10px; */
+}
+.add-frist{
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+    
+}
+.add-sec{
+    color: #ccc;
+    font-size: 1rem;
+
+}
+.add-icon{
+    color: #ccc;
+    display: flex;
+    gap: 3px;
+    /* margin-top: 3px; */
+    margin-left: 4px;
+}
+/*this is the seach box */
+.nav-search{
+    display: flex;
+    /* color: #530e0e; */
+    /* background-color: pink; */
+    height: 40px;
+    width: 450px;
+    border-radius: 6px;
+    justify-content: space-evenly;
+    
+}
+/* .nav-search :hover{
+    border: 3px solid  rgba(255, 170, 0, 0.738);
+} */
+.search-select{
+    text-align: center;
+    width: 50px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; 
+   
+    border: none;
+    
+}
+/* .search-select option{
+    background-color:rebeccapurple;
+
+} */
+.search-input{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    
+
+}
+.search-input :hover{
+    border: 3px solid  rgba(255, 170, 0, 0.738);
+
+}
+.search-icon{
+    font-size: 1.3rem;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 170, 0, 0.738);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color:#0f1111;
+
+}
+
+/* third box */
+.nav-signin{
+    display: flex;
+    color:#ccc;
+    justify-content: space-between;
+    align-items: center;
+   gap: 15px;
+}
+.sign-in{
+  color: #ccc;
+}
+.up{
+    font-size: 0.85rem;
+}
+.down{
+    font-weight: 700;
+    font-size:0.9rem;
+}
+.cart{
+    display: flex;
+    align-items: center;
+}
+.cart i{
+    font-size:2rem;
+}
+
+/* 
+now css about nav2 */
+.navbar2{
+    height: 40px;
+    background-color: #222f3d;
+    width: 100%;
+    display: flex;
+    color: #ccc;
+    /* space evenly divides all the items in equal spaces */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 550;
+   
+      
+}
+.all{
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    gap: 3px;
+    
+
+}
+.categories{
+    margin-left: 20px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    
+}
+.categories2{
+    /* display: flex; */
+    width: 200px;
+    font-size:0.97rem;
+
+}
+
+/* now its time to create hero section  */
+.hero-sec{
+    background-image: url("https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg");
+    height: 390px;
+    background-size:contain;
+}
+.hero-info{
+    background-color:white;
+    height: 30px;
+    font-size:0.8rem;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+
+}
+.hero-info p a{
+    color: #007185;
+    text-decoration: none;
+}
+.hero-boxes{
+    background-color: rgba(255, 192, 203, 0.376);
+    width: 100%;
+    height: 1200px;
+    /* this grid section helps to make columns and rows of equal length and responsive */
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 350px 350px; 
+    row-gap: 2rem;
+    column-gap: 2rem;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    padding: 15px;
+}
+.box1{
+   background-color: white; 
+   /* height: 300px; */
+   /* border: 3px black solid; */
+   padding: 20px;
+}
+.box1 img{
+
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+
+}
+.heading{
+    margin-top:0px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footing{
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: #007185;
+    cursor: pointer;
+
+}
+
+/* now its time to code the footer section */
+footer{
+    margin-top: 15px;
+}
+.footer-panel1{
+    background-color: #37475a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    height: 45px;
+    font-size: 0.85rem;
+    cursor: pointer;
+
+
+}
+
+.footer-panel2{
+    display: flex;
+   
+    padding: 50px 30px;
+    background-color:#222f3d;
+    color: white;
+    justify-content: space-evenly;
+    height: 300px;
+    gap: 2.5rem;
+    
+}
+.footer-panel2 ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 700;
+    row-gap: 0.7rem;
+
+}
+.footer-panel2 ul a{
+    font-size:0.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-pannel3{
+    background-color: #37475a;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-pannel3 img{
+    width: 100px;
+    height: 60px;
+}
+.footer-panel4{
+    width: 100%;
+    height: 100px;
+    background-color:#0f1111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap:1rem;
+}
+.footer-panel4 p{
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
